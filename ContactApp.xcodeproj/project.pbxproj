@@ -100,6 +100,7 @@
 		89FDE6292498E07D00A1D760 /* ContactListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListService.swift; sourceTree = "<group>"; };
 		89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSourceTest.swift; sourceTree = "<group>"; };
 		89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTest.swift; sourceTree = "<group>"; };
+		89FDE6312498EC7800A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,14 +192,14 @@
 				890844232497B3B800E2D5F7 /* AppDelegate.swift */,
 				890844252497B3B800E2D5F7 /* SceneDelegate.swift */,
 				89FDE6202498C11600A1D760 /* SessionManager.swift */,
+				89FDE6302498EC5C00A1D760 /* SingleTone */,
+				89FDE62F2498EC4300A1D760 /* Storyboard */,
 				57DDBE502497F8A7007929DF /* ViewModel */,
 				89673BFF2497C95C00FD8DD3 /* Views */,
 				89673BFE2497C94200FD8DD3 /* Model */,
 				89673BFD2497C8EB00FD8DD3 /* Resource */,
 				89673BF92497C82200FD8DD3 /* Service */,
-				890844292497B3B800E2D5F7 /* Main.storyboard */,
 				8908442C2497B3BC00E2D5F7 /* Assets.xcassets */,
-				8908442E2497B3BC00E2D5F7 /* LaunchScreen.storyboard */,
 				89FDE61E2498B68E00A1D760 /* Auth0.plist */,
 				890844312497B3BD00E2D5F7 /* Info.plist */,
 			);
@@ -282,6 +283,23 @@
 				57DDBE4C2497F2BB007929DF /* ContactTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		89FDE62F2498EC4300A1D760 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				890844292497B3B800E2D5F7 /* Main.storyboard */,
+				8908442E2497B3BC00E2D5F7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		89FDE6302498EC5C00A1D760 /* SingleTone */ = {
+			isa = PBXGroup;
+			children = (
+				89FDE6312498EC7800A1D760 /* SessionManager.swift */,
+			);
+			path = SingleTone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
