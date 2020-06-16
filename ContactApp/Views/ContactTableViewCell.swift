@@ -37,7 +37,7 @@ class ContactTableViewCell: UITableViewCell {
     }
 	
 	
-	
+	/// formating text for cell label
 	func getTextLabel(contact:Contact) -> NSAttributedString {
 		let attributedText = NSMutableAttributedString()
 		

@@ -65,7 +65,7 @@ class ContactListViewController: UIViewController {
     
    
 	
-	
+	/// handaling user sessions
 	@IBAction func logoutBarBtnA(_ sender: Any) {
         let barBtn = sender as! UIBarButtonItem
         if barBtn.title == "Logout"{
