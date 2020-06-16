@@ -2,13 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SchemeUserState</key>
-	<dict>
-		<key>ContactApp.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-	</dict>
+	<key>Domain</key>
+	<string>dev-contact-app.us.auth0.com</string>
+	<key>ClientId</key>
+	<string>XCDb1fhtDSSbMgpnVYLyVpI2L6h2RHyI</string>
 </dict>
 </plist>

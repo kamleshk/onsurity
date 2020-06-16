@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57DDBE4D2497F2BB007929DF /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DDBE4C2497F2BB007929DF /* ContactTableViewCell.swift */; };
+		57DDBE4F2497F796007929DF /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DDBE4E2497F796007929DF /* ListDataSource.swift */; };
+		57DDBE522497F8E3007929DF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DDBE512497F8E2007929DF /* ListViewModel.swift */; };
 		890844242497B3B800E2D5F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890844232497B3B800E2D5F7 /* AppDelegate.swift */; };
 		890844262497B3B800E2D5F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890844252497B3B800E2D5F7 /* SceneDelegate.swift */; };
-		890844282497B3B800E2D5F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890844272497B3B800E2D5F7 /* ViewController.swift */; };
+		890844282497B3B800E2D5F7 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890844272497B3B800E2D5F7 /* ContactListViewController.swift */; };
 		8908442B2497B3B800E2D5F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890844292497B3B800E2D5F7 /* Main.storyboard */; };
 		8908442D2497B3BC00E2D5F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8908442C2497B3BC00E2D5F7 /* Assets.xcassets */; };
 		890844302497B3BC00E2D5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8908442E2497B3BC00E2D5F7 /* LaunchScreen.storyboard */; };
 		8908443B2497B3BD00E2D5F7 /* ContactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8908443A2497B3BD00E2D5F7 /* ContactAppTests.swift */; };
 		890844462497B3BD00E2D5F7 /* ContactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890844452497B3BD00E2D5F7 /* ContactAppUITests.swift */; };
+		89673BEB2497C69100FD8DD3 /* Extension_UiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BEA2497C69100FD8DD3 /* Extension_UiImageView.swift */; };
+		89673BED2497C6EC00FD8DD3 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BEC2497C6EC00FD8DD3 /* DynamicValue.swift */; };
+		89673BEF2497C72F00FD8DD3 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BEE2497C72F00FD8DD3 /* ParserHelper.swift */; };
+		89673BF52497C77B00FD8DD3 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BF12497C77B00FD8DD3 /* RequestService.swift */; };
+		89673BF62497C77B00FD8DD3 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BF22497C77B00FD8DD3 /* FileDataService.swift */; };
+		89673BF72497C77B00FD8DD3 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BF32497C77B00FD8DD3 /* RequestHandler.swift */; };
+		89673BF82497C77B00FD8DD3 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BF42497C77B00FD8DD3 /* RequestFactory.swift */; };
+		89673BFB2497C84900FD8DD3 /* ContactListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673BFA2497C84900FD8DD3 /* ContactListService.swift */; };
+		89673C012497CA0200FD8DD3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673C002497CA0200FD8DD3 /* Contact.swift */; };
+		89FDE61B2498AE6D00A1D760 /* AlertController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE61A2498AE6D00A1D760 /* AlertController+Loading.swift */; };
+		89FDE61F2498B68E00A1D760 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89FDE61E2498B68E00A1D760 /* Auth0.plist */; };
+		89FDE6212498C11600A1D760 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6202498C11600A1D760 /* SessionManager.swift */; };
+		89FDE6252498DC8100A1D760 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6242498DC8100A1D760 /* ContactModel.swift */; };
+		89FDE6282498DEE600A1D760 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FDE6262498DEC300A1D760 /* sample.json */; };
+		89FDE62A2498E07D00A1D760 /* ContactListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6292498E07D00A1D760 /* ContactListService.swift */; };
+		89FDE62C2498E32A00A1D760 /* ListDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */; };
+		89FDE62E2498E7CA00A1D760 /* ListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */; };
+		8C8545FB4256741381CEDE98 /* Pods_ContactAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5774A3B47A1ED00DF52D722B /* Pods_ContactAppUITests.framework */; };
+		AAFCABB9848F7ACE2823AA15 /* Pods_ContactApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E843A08C581F59A99D75780 /* Pods_ContactApp.framework */; };
+		C95BBA37EA290CA6C819E4A1 /* Pods_ContactAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0CA1CB395A71E38AE7850E /* Pods_ContactAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +58,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFB86C94A2BB37A3278BD9E /* Pods-ContactAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppUITests/Pods-ContactAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		187764BF41E8BDC94417B1D1 /* Pods-ContactAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppUITests/Pods-ContactAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5496FC1D10613B88FAAF8DE8 /* Pods-ContactAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5774A3B47A1ED00DF52D722B /* Pods_ContactAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DDBE4C2497F2BB007929DF /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		57DDBE4E2497F796007929DF /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		57DDBE512497F8E2007929DF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		59BBD0AB5A0619CF8407241D /* Pods-ContactApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactApp/Pods-ContactApp.release.xcconfig"; sourceTree = "<group>"; };
+		5E843A08C581F59A99D75780 /* Pods_ContactApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0CA1CB395A71E38AE7850E /* Pods_ContactAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		757CD03B4255B7433C8A359F /* Pods-ContactApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactApp/Pods-ContactApp.debug.xcconfig"; sourceTree = "<group>"; };
 		890844202497B3B800E2D5F7 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		890844232497B3B800E2D5F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		890844252497B3B800E2D5F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		890844272497B3B800E2D5F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		890844272497B3B800E2D5F7 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		8908442A2497B3B800E2D5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8908442C2497B3BC00E2D5F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8908442F2497B3BC00E2D5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +83,24 @@
 		890844412497B3BD00E2D5F7 /* ContactAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		890844452497B3BD00E2D5F7 /* ContactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAppUITests.swift; sourceTree = "<group>"; };
 		890844472497B3BD00E2D5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89673BEA2497C69100FD8DD3 /* Extension_UiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UiImageView.swift; sourceTree = "<group>"; };
+		89673BEC2497C6EC00FD8DD3 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		89673BEE2497C72F00FD8DD3 /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		89673BF12497C77B00FD8DD3 /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		89673BF22497C77B00FD8DD3 /* FileDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
+		89673BF32497C77B00FD8DD3 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		89673BF42497C77B00FD8DD3 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		89673BFA2497C84900FD8DD3 /* ContactListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListService.swift; sourceTree = "<group>"; };
+		89673C002497CA0200FD8DD3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		89FDE61A2498AE6D00A1D760 /* AlertController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Loading.swift"; sourceTree = "<group>"; };
+		89FDE61E2498B68E00A1D760 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		89FDE6202498C11600A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = "../../auth0-ios-swift-sample-master/05-Authorization/Auth0Sample/SessionManager.swift"; sourceTree = "<group>"; };
+		89FDE6242498DC8100A1D760 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		89FDE6262498DEC300A1D760 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		89FDE6292498E07D00A1D760 /* ContactListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListService.swift; sourceTree = "<group>"; };
+		89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSourceTest.swift; sourceTree = "<group>"; };
+		89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTest.swift; sourceTree = "<group>"; };
+		9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFCABB9848F7ACE2823AA15 /* Pods_ContactApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95BBA37EA290CA6C819E4A1 /* Pods_ContactAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +124,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8545FB4256741381CEDE98 /* Pods_ContactAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E988093E0CAC85DFDF0418 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				757CD03B4255B7433C8A359F /* Pods-ContactApp.debug.xcconfig */,
+				59BBD0AB5A0619CF8407241D /* Pods-ContactApp.release.xcconfig */,
+				5496FC1D10613B88FAAF8DE8 /* Pods-ContactAppTests.debug.xcconfig */,
+				9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */,
+				187764BF41E8BDC94417B1D1 /* Pods-ContactAppUITests.debug.xcconfig */,
+				0AFB86C94A2BB37A3278BD9E /* Pods-ContactAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C73A232193F389DED87373A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E843A08C581F59A99D75780 /* Pods_ContactApp.framework */,
+				6C0CA1CB395A71E38AE7850E /* Pods_ContactAppTests.framework */,
+				5774A3B47A1ED00DF52D722B /* Pods_ContactAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57DDBE502497F8A7007929DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57DDBE512497F8E2007929DF /* ListViewModel.swift */,
+				57DDBE4E2497F796007929DF /* ListDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		890844172497B3B800E2D5F7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +170,8 @@
 				890844392497B3BD00E2D5F7 /* ContactAppTests */,
 				890844442497B3BD00E2D5F7 /* ContactAppUITests */,
 				890844212497B3B800E2D5F7 /* Products */,
+				13E988093E0CAC85DFDF0418 /* Pods */,
+				4C73A232193F389DED87373A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +190,16 @@
 			children = (
 				890844232497B3B800E2D5F7 /* AppDelegate.swift */,
 				890844252497B3B800E2D5F7 /* SceneDelegate.swift */,
-				890844272497B3B800E2D5F7 /* ViewController.swift */,
+				89FDE6202498C11600A1D760 /* SessionManager.swift */,
+				57DDBE502497F8A7007929DF /* ViewModel */,
+				89673BFF2497C95C00FD8DD3 /* Views */,
+				89673BFE2497C94200FD8DD3 /* Model */,
+				89673BFD2497C8EB00FD8DD3 /* Resource */,
+				89673BF92497C82200FD8DD3 /* Service */,
 				890844292497B3B800E2D5F7 /* Main.storyboard */,
 				8908442C2497B3BC00E2D5F7 /* Assets.xcassets */,
 				8908442E2497B3BC00E2D5F7 /* LaunchScreen.storyboard */,
+				89FDE61E2498B68E00A1D760 /* Auth0.plist */,
 				890844312497B3BD00E2D5F7 /* Info.plist */,
 			);
 			path = ContactApp;
@@ -114,6 +209,11 @@
 			isa = PBXGroup;
 			children = (
 				8908443A2497B3BD00E2D5F7 /* ContactAppTests.swift */,
+				89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */,
+				89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */,
+				89FDE6292498E07D00A1D760 /* ContactListService.swift */,
+				89FDE6242498DC8100A1D760 /* ContactModel.swift */,
+				89FDE6262498DEC300A1D760 /* sample.json */,
 				8908443C2497B3BD00E2D5F7 /* Info.plist */,
 			);
 			path = ContactAppTests;
@@ -128,6 +228,62 @@
 			path = ContactAppUITests;
 			sourceTree = "<group>";
 		};
+		89673BF02497C77B00FD8DD3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89673BF12497C77B00FD8DD3 /* RequestService.swift */,
+				89673BF22497C77B00FD8DD3 /* FileDataService.swift */,
+				89673BF32497C77B00FD8DD3 /* RequestHandler.swift */,
+				89673BF42497C77B00FD8DD3 /* RequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89673BF92497C82200FD8DD3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				89673BFA2497C84900FD8DD3 /* ContactListService.swift */,
+				89673BF02497C77B00FD8DD3 /* Network */,
+				89673BFC2497C87800FD8DD3 /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		89673BFC2497C87800FD8DD3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				89673BEE2497C72F00FD8DD3 /* ParserHelper.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		89673BFD2497C8EB00FD8DD3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89673BEA2497C69100FD8DD3 /* Extension_UiImageView.swift */,
+				89FDE61A2498AE6D00A1D760 /* AlertController+Loading.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		89673BFE2497C94200FD8DD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89673BEC2497C6EC00FD8DD3 /* DynamicValue.swift */,
+				89673C002497CA0200FD8DD3 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89673BFF2497C95C00FD8DD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				890844272497B3B800E2D5F7 /* ContactListViewController.swift */,
+				57DDBE4C2497F2BB007929DF /* ContactTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8908444A2497B3BD00E2D5F7 /* Build configuration list for PBXNativeTarget "ContactApp" */;
 			buildPhases = (
+				9F2CE77278381554D5308635 /* [CP] Check Pods Manifest.lock */,
 				8908441C2497B3B800E2D5F7 /* Sources */,
 				8908441D2497B3B800E2D5F7 /* Frameworks */,
 				8908441E2497B3B800E2D5F7 /* Resources */,
+				85ADEEDE2E99D0A35C70A0EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8908444D2497B3BD00E2D5F7 /* Build configuration list for PBXNativeTarget "ContactAppTests" */;
 			buildPhases = (
+				F189E6ADB5C6C314E571BCD4 /* [CP] Check Pods Manifest.lock */,
 				890844322497B3BD00E2D5F7 /* Sources */,
 				890844332497B3BD00E2D5F7 /* Frameworks */,
 				890844342497B3BD00E2D5F7 /* Resources */,
@@ -170,6 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 890844502497B3BD00E2D5F7 /* Build configuration list for PBXNativeTarget "ContactAppUITests" */;
 			buildPhases = (
+				674761B707C45AF41BA9B45B /* [CP] Check Pods Manifest.lock */,
 				8908443D2497B3BD00E2D5F7 /* Sources */,
 				8908443E2497B3BD00E2D5F7 /* Frameworks */,
 				8908443F2497B3BD00E2D5F7 /* Resources */,
@@ -232,9 +392,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FDE6282498DEE600A1D760 /* sample.json in Resources */,
 				890844302497B3BC00E2D5F7 /* LaunchScreen.storyboard in Resources */,
 				8908442D2497B3BC00E2D5F7 /* Assets.xcassets in Resources */,
 				8908442B2497B3B800E2D5F7 /* Main.storyboard in Resources */,
+				89FDE61F2498B68E00A1D760 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +416,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		674761B707C45AF41BA9B45B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85ADEEDE2E99D0A35C70A0EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ContactApp/Pods-ContactApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactApp/Pods-ContactApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2CE77278381554D5308635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F189E6ADB5C6C314E571BCD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8908441C2497B3B800E2D5F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890844282497B3B800E2D5F7 /* ViewController.swift in Sources */,
+				89673C012497CA0200FD8DD3 /* Contact.swift in Sources */,
+				89673BF52497C77B00FD8DD3 /* RequestService.swift in Sources */,
+				89FDE6212498C11600A1D760 /* SessionManager.swift in Sources */,
+				89673BFB2497C84900FD8DD3 /* ContactListService.swift in Sources */,
+				890844282497B3B800E2D5F7 /* ContactListViewController.swift in Sources */,
+				57DDBE4D2497F2BB007929DF /* ContactTableViewCell.swift in Sources */,
 				890844242497B3B800E2D5F7 /* AppDelegate.swift in Sources */,
+				57DDBE522497F8E3007929DF /* ListViewModel.swift in Sources */,
+				89673BF62497C77B00FD8DD3 /* FileDataService.swift in Sources */,
+				57DDBE4F2497F796007929DF /* ListDataSource.swift in Sources */,
+				89673BEF2497C72F00FD8DD3 /* ParserHelper.swift in Sources */,
+				89673BF72497C77B00FD8DD3 /* RequestHandler.swift in Sources */,
+				89673BF82497C77B00FD8DD3 /* RequestFactory.swift in Sources */,
+				89673BED2497C6EC00FD8DD3 /* DynamicValue.swift in Sources */,
+				89673BEB2497C69100FD8DD3 /* Extension_UiImageView.swift in Sources */,
 				890844262497B3B800E2D5F7 /* SceneDelegate.swift in Sources */,
+				89FDE61B2498AE6D00A1D760 /* AlertController+Loading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +540,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FDE6252498DC8100A1D760 /* ContactModel.swift in Sources */,
+				89FDE62E2498E7CA00A1D760 /* ListViewModelTest.swift in Sources */,
 				8908443B2497B3BD00E2D5F7 /* ContactAppTests.swift in Sources */,
+				89FDE62C2498E32A00A1D760 /* ListDataSourceTest.swift in Sources */,
+				89FDE62A2498E07D00A1D760 /* ContactListService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +707,7 @@
 		};
 		8908444B2497B3BD00E2D5F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 757CD03B4255B7433C8A359F /* Pods-ContactApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +725,7 @@
 		};
 		8908444C2497B3BD00E2D5F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BBD0AB5A0619CF8407241D /* Pods-ContactApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +743,7 @@
 		};
 		8908444E2497B3BD00E2D5F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5496FC1D10613B88FAAF8DE8 /* Pods-ContactAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +765,7 @@
 		};
 		8908444F2497B3BD00E2D5F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +787,7 @@
 		};
 		890844512497B3BD00E2D5F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187764BF41E8BDC94417B1D1 /* Pods-ContactAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +807,7 @@
 		};
 		890844522497B3BD00E2D5F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFB86C94A2BB37A3278BD9E /* Pods-ContactAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

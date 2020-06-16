@@ -1,0 +1,43 @@
+{
+    "success": 1,
+    "msg": "contact fetched",
+    "data": [{
+        "first_name": "TestUser",
+        "last_name": "One",
+        "mobile_number": 1234567890,
+        "email_id": "test@one.com",
+        "profile_image": "https://i.picsum.photos/id/237/200/300.jpg"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Two",
+        "mobile_number": 1234567891,
+        "email_id": "test@two.com"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Three",
+        "mobile_number": 1234567892,
+        "email_id": "test@three.com",
+        "profile_image": "https://i.picsum.photos/id/237/200/300.jpg"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Four",
+        "mobile_number": 1234567893,
+        "email_id": "test@four.com"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Five",
+        "mobile_number": 1234567894,
+        "email_id": "test@five.com",
+        "profile_image": "https://i.picsum.photos/id/237/200/300.jpg"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Six",
+        "mobile_number": 1234567895,
+        "email_id": "test@six.com"
+    }, {
+        "first_name": "TestUser",
+        "last_name": "Seven",
+        "mobile_number": 1234567896,
+        "email_id": "test@seven.com"
+    }]
+}
