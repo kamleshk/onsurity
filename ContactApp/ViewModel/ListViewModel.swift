@@ -9,46 +9,46 @@
 import Foundation
 import Auth0
 struct ListViewModel {
-	
-	private var dataSource: GenericDataSource<Contact>?
-	public var service: ContactServiceProtocol?
-	public var onErrorHandling: ((ErrorResult?) -> Void)? // call back for passing event if any failure happen with business logic
     
-	init(service: ContactServiceProtocol , dataSource: GenericDataSource<Contact>) {
-		self.dataSource = dataSource
-		self.service = service
-	}
-	
-	
-	///  Method for calling api
-	internal func fetchList() {
-		guard let service = service else {
-			onErrorHandling?(ErrorResult.custom(string: "Missing service"))
-			return
-		}
-		// calling api and reloading on main thread
-		service.fetchContactList { result in
-			DispatchQueue.main.async {
-				switch result {
-				case .success(let contactModel) :
-					print(contactModel)
-				//	self.messagePassing?(factsModel.title)
-					self.dataSource?.data.value = contactModel.data ?? []
-				case .failure(let error) :
-					self.onErrorHandling?(error)
-				}
-			}
-		}
-	}
+    private var dataSource: GenericDataSource<Contact>?
+    public var service: ContactServiceProtocol?
+    public var onErrorHandling: ((ErrorResult?) -> Void)? // call back for passing event if any failure happen with business logic
+    
+    init(service: ContactServiceProtocol , dataSource: GenericDataSource<Contact>) {
+        self.dataSource = dataSource
+        self.service = service
+    }
     
     
-    func login(complition:@escaping (_ autharised:Bool,_ userDetail:UserInfo)->Void) {
+    ///  Method for calling api
+    internal func fetchList() {
+        guard let service = service else {
+            onErrorHandling?(ErrorResult.custom(string: "Missing service"))
+            return
+        }
+        // calling api and reloading on main thread
+        service.fetchContactList { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let contactModel) :
+                    print(contactModel)
+                //    self.messagePassing?(factsModel.title)
+                    self.dataSource?.data.value = contactModel.data ?? []
+                case .failure(let error) :
+                    self.onErrorHandling?(error)
+                }
+            }
+        }
+    }
+    
+    
+    func login(complition:@escaping (_ autharised:Bool,_ userDetail:UserInfo?)->Void) {
         checkAccessToken(complition: complition)
         
       
     }
     
-    func showLog(complition:@escaping (_ autharised:Bool,_ userDetail:UserInfo)->Void)  {
+    func showLog(complition:@escaping (_ autharised:Bool,_ userDetail:UserInfo?)->Void)  {
          guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
                     Auth0
                         .webAuth()
@@ -58,6 +58,7 @@ struct ListViewModel {
                             switch $0 {
                             case .failure(let error):
                                 // Handle the error
+                                complition(false,nil)
                                 print("Error: \(error)")
                             case .success(let credentials):
                                 guard let accessToken = credentials.accessToken, let idToken = credentials.idToken else { return }
@@ -75,7 +76,7 @@ struct ListViewModel {
     }
     
     
-    fileprivate func checkAccessToken(complition: @escaping (_ autharised:Bool,_ userDetail:UserInfo)->Void) {
+    fileprivate func checkAccessToken(complition: @escaping (_ autharised:Bool,_ userDetail:UserInfo?)->Void) {
       SessionManager.shared.retrieveProfile { error in
           DispatchQueue.main.async {
               //loadingAlert.dismiss(animated: true) {

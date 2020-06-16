@@ -70,7 +70,8 @@ class ContactListViewController: UIViewController {
    
 	
 	/// handaling user sessions
-	@IBAction func logoutBarBtnA(_ sender: Any) {
+    @IBAction func logoutBarBtnA(_ sender: Any) {
+        
         let barBtn = sender as! UIBarButtonItem
         if barBtn.title == "Logout"{
             self.viewModel.logout()
@@ -81,12 +82,15 @@ class ContactListViewController: UIViewController {
             loadingAlert.presentInViewController(self)
         self.viewModel.login {[weak self] (isAuth, userInfo) in
             loadingAlert.dismiss(animated: true) {}
-            self?.title = userInfo.name
-            barBtn.title = "Logout"
-            self?.viewModel.fetchList()
+            if isAuth{
+                self?.title = userInfo!.name
+                barBtn.title = "Logout"
+                self?.viewModel.fetchList()
+            }
+           
          }
+      }
     }
-	}
     
     func pushtoDetail(contact:Contact)  {
         let detaiCont = self.storyboard?.instantiateViewController(identifier: "ContactDetailViewController") as! ContactDetailViewController
