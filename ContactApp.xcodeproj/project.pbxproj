@@ -29,12 +29,12 @@
 		89673C012497CA0200FD8DD3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89673C002497CA0200FD8DD3 /* Contact.swift */; };
 		89FDE61B2498AE6D00A1D760 /* AlertController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE61A2498AE6D00A1D760 /* AlertController+Loading.swift */; };
 		89FDE61F2498B68E00A1D760 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89FDE61E2498B68E00A1D760 /* Auth0.plist */; };
-		89FDE6212498C11600A1D760 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6202498C11600A1D760 /* SessionManager.swift */; };
 		89FDE6252498DC8100A1D760 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6242498DC8100A1D760 /* ContactModel.swift */; };
 		89FDE6282498DEE600A1D760 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FDE6262498DEC300A1D760 /* sample.json */; };
 		89FDE62A2498E07D00A1D760 /* ContactListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6292498E07D00A1D760 /* ContactListService.swift */; };
 		89FDE62C2498E32A00A1D760 /* ListDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */; };
 		89FDE62E2498E7CA00A1D760 /* ListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */; };
+		89FDE6342498F04500A1D760 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6332498F04400A1D760 /* SessionManager.swift */; };
 		8C8545FB4256741381CEDE98 /* Pods_ContactAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5774A3B47A1ED00DF52D722B /* Pods_ContactAppUITests.framework */; };
 		AAFCABB9848F7ACE2823AA15 /* Pods_ContactApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E843A08C581F59A99D75780 /* Pods_ContactApp.framework */; };
 		C95BBA37EA290CA6C819E4A1 /* Pods_ContactAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0CA1CB395A71E38AE7850E /* Pods_ContactAppTests.framework */; };
@@ -94,13 +94,12 @@
 		89673C002497CA0200FD8DD3 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		89FDE61A2498AE6D00A1D760 /* AlertController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Loading.swift"; sourceTree = "<group>"; };
 		89FDE61E2498B68E00A1D760 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
-		89FDE6202498C11600A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = "../../auth0-ios-swift-sample-master/05-Authorization/Auth0Sample/SessionManager.swift"; sourceTree = "<group>"; };
 		89FDE6242498DC8100A1D760 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		89FDE6262498DEC300A1D760 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		89FDE6292498E07D00A1D760 /* ContactListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListService.swift; sourceTree = "<group>"; };
 		89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSourceTest.swift; sourceTree = "<group>"; };
 		89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTest.swift; sourceTree = "<group>"; };
-		89FDE6312498EC7800A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		89FDE6332498F04400A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +190,6 @@
 			children = (
 				890844232497B3B800E2D5F7 /* AppDelegate.swift */,
 				890844252497B3B800E2D5F7 /* SceneDelegate.swift */,
-				89FDE6202498C11600A1D760 /* SessionManager.swift */,
 				89FDE6302498EC5C00A1D760 /* SingleTone */,
 				89FDE62F2498EC4300A1D760 /* Storyboard */,
 				57DDBE502497F8A7007929DF /* ViewModel */,
@@ -297,7 +295,7 @@
 		89FDE6302498EC5C00A1D760 /* SingleTone */ = {
 			isa = PBXGroup;
 			children = (
-				89FDE6312498EC7800A1D760 /* SessionManager.swift */,
+				89FDE6332498F04400A1D760 /* SessionManager.swift */,
 			);
 			path = SingleTone;
 			sourceTree = "<group>";
@@ -536,7 +534,6 @@
 			files = (
 				89673C012497CA0200FD8DD3 /* Contact.swift in Sources */,
 				89673BF52497C77B00FD8DD3 /* RequestService.swift in Sources */,
-				89FDE6212498C11600A1D760 /* SessionManager.swift in Sources */,
 				89673BFB2497C84900FD8DD3 /* ContactListService.swift in Sources */,
 				890844282497B3B800E2D5F7 /* ContactListViewController.swift in Sources */,
 				57DDBE4D2497F2BB007929DF /* ContactTableViewCell.swift in Sources */,
@@ -545,6 +542,7 @@
 				89673BF62497C77B00FD8DD3 /* FileDataService.swift in Sources */,
 				57DDBE4F2497F796007929DF /* ListDataSource.swift in Sources */,
 				89673BEF2497C72F00FD8DD3 /* ParserHelper.swift in Sources */,
+				89FDE6342498F04500A1D760 /* SessionManager.swift in Sources */,
 				89673BF72497C77B00FD8DD3 /* RequestHandler.swift in Sources */,
 				89673BF82497C77B00FD8DD3 /* RequestFactory.swift in Sources */,
 				89673BED2497C6EC00FD8DD3 /* DynamicValue.swift in Sources */,
