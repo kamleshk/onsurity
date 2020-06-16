@@ -10,11 +10,12 @@ import UIKit
 
 class GenericDataSource<T>: NSObject {
 	var data: DynamicValue<[T]> = DynamicValue([])
+    var selectedData: DynamicValue<[T]> = DynamicValue([])
 }
 
 class ListDataSource: GenericDataSource<Contact> {
 }
-extension ListDataSource: UITableViewDataSource {
+extension ListDataSource: UITableViewDataSource , UITableViewDelegate{
 	
 	/// Tableview datasource methods
 	/// - Parameter tableView: listtableview
@@ -41,4 +42,11 @@ extension ListDataSource: UITableViewDataSource {
 		
 		return cell
 	}
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.selectedData.value = [self.data.value[indexPath.row]]
+    }
+    
+    
 }

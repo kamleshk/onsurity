@@ -39,7 +39,7 @@ class DynamicValue<T> {
     ///   - completionHandler: closers function
     public func addAndNotify(observer: NSObject, completionHandler: @escaping CompletionHandler) {
         self.addObserver(observer, completionHandler: completionHandler)
-        self.notify()
+       // self.notify()
     }
     
     private func notify() {

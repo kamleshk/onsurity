@@ -36,6 +36,7 @@ class ContactListViewController: UIViewController {
 	/// Setting initial setup view which is going to be called when view going to load into memory
 	func setupUi()  {
 		self.contactListView.dataSource = self.dataSource
+        self.contactListView.delegate = self.dataSource
 	
 	}
 	
@@ -46,8 +47,11 @@ class ContactListViewController: UIViewController {
 		self.dataSource.data.addAndNotify(observer: self) { [weak self ] _ in
 			self?.contactListView.reloadData()
 		}
-		/// setting a listener for setting a title on navbar
-        
+		self.dataSource.selectedData.addAndNotify(observer: self) { [weak self ] contact in
+            print(contact)
+            self?.pushtoDetail(contact: contact.first!)
+           
+        }
         
 		
 	}
@@ -83,6 +87,13 @@ class ContactListViewController: UIViewController {
          }
     }
 	}
+    
+    func pushtoDetail(contact:Contact)  {
+        let detaiCont = self.storyboard?.instantiateViewController(identifier: "ContactDetailViewController") as! ContactDetailViewController
+        detaiCont.detailViewModel = ContactDetailViewModel(contact: contact)
+        self.navigationController?.pushViewController(detaiCont, animated: true)
+        
+    }
 }
 
 

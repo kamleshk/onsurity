@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+            <point key="canvasLocation" x="829" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FVc-uY-cZn">
@@ -121,6 +121,47 @@
                 </button>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Contact Detail View Controller-->
+        <scene sceneID="H6q-4h-28o">
+            <objects>
+                <viewController storyboardIdentifier="ContactDetailViewController" id="BQl-Ja-NzY" customClass="ContactDetailViewController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V36-SR-CKf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rby-G2-BhD">
+                                <rect key="frame" x="10" y="267" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5Bh-KA-F1u">
+                                <rect key="frame" x="157" y="134.5" width="100" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KGg-AB-G8Q"/>
+                                    <constraint firstAttribute="height" constant="100" id="f2h-6o-oht"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Bh-KA-F1u" firstAttribute="top" secondItem="AEf-3c-ENK" secondAttribute="top" constant="90" id="7i3-bh-ENN"/>
+                            <constraint firstItem="AEf-3c-ENK" firstAttribute="trailing" secondItem="rby-G2-BhD" secondAttribute="trailing" constant="10" id="bhd-5x-GLX"/>
+                            <constraint firstItem="5Bh-KA-F1u" firstAttribute="centerX" secondItem="V36-SR-CKf" secondAttribute="centerX" id="fiC-m3-yzu"/>
+                            <constraint firstItem="rby-G2-BhD" firstAttribute="top" secondItem="5Bh-KA-F1u" secondAttribute="bottom" constant="33" id="foZ-1s-ELd"/>
+                            <constraint firstItem="rby-G2-BhD" firstAttribute="leading" secondItem="AEf-3c-ENK" secondAttribute="leading" constant="10" id="lcA-nN-ioZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AEf-3c-ENK"/>
+                    </view>
+                    <connections>
+                        <outlet property="contectLbl" destination="rby-G2-BhD" id="9Yy-gm-hTb"/>
+                        <outlet property="profileImage" destination="5Bh-KA-F1u" id="1KI-lL-omR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIa-8W-Gxr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542.0289855072465" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>

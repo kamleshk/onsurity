@@ -30,10 +30,10 @@ struct ListViewModel {
 		service.fetchContactList { result in
 			DispatchQueue.main.async {
 				switch result {
-				case .success(let factsModel) :
-					print(factsModel)
+				case .success(let contactModel) :
+					print(contactModel)
 				//	self.messagePassing?(factsModel.title)
-					self.dataSource?.data.value = factsModel.data ?? []
+					self.dataSource?.data.value = contactModel.data ?? []
 				case .failure(let error) :
 					self.onErrorHandling?(error)
 				}

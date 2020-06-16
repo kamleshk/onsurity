@@ -35,6 +35,8 @@
 		89FDE62C2498E32A00A1D760 /* ListDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */; };
 		89FDE62E2498E7CA00A1D760 /* ListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */; };
 		89FDE6342498F04500A1D760 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6332498F04400A1D760 /* SessionManager.swift */; };
+		89FDE6372498F53100A1D760 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6362498F53100A1D760 /* ContactDetailViewController.swift */; };
+		89FDE6392499148D00A1D760 /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDE6382499148D00A1D760 /* ContactDetailViewModel.swift */; };
 		8C8545FB4256741381CEDE98 /* Pods_ContactAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5774A3B47A1ED00DF52D722B /* Pods_ContactAppUITests.framework */; };
 		AAFCABB9848F7ACE2823AA15 /* Pods_ContactApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E843A08C581F59A99D75780 /* Pods_ContactApp.framework */; };
 		C95BBA37EA290CA6C819E4A1 /* Pods_ContactAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0CA1CB395A71E38AE7850E /* Pods_ContactAppTests.framework */; };
@@ -100,6 +102,8 @@
 		89FDE62B2498E32A00A1D760 /* ListDataSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSourceTest.swift; sourceTree = "<group>"; };
 		89FDE62D2498E7CA00A1D760 /* ListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTest.swift; sourceTree = "<group>"; };
 		89FDE6332498F04400A1D760 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		89FDE6362498F53100A1D760 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		89FDE6382499148D00A1D760 /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
 		9B3BE5FE9F52B3C4C198250F /* Pods-ContactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,7 @@
 			children = (
 				57DDBE512497F8E2007929DF /* ListViewModel.swift */,
 				57DDBE4E2497F796007929DF /* ListDataSource.swift */,
+				89FDE6382499148D00A1D760 /* ContactDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			children = (
 				890844272497B3B800E2D5F7 /* ContactListViewController.swift */,
 				57DDBE4C2497F2BB007929DF /* ContactTableViewCell.swift */,
+				89FDE6362498F53100A1D760 /* ContactDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,12 +542,14 @@
 				89673BF52497C77B00FD8DD3 /* RequestService.swift in Sources */,
 				89673BFB2497C84900FD8DD3 /* ContactListService.swift in Sources */,
 				890844282497B3B800E2D5F7 /* ContactListViewController.swift in Sources */,
+				89FDE6372498F53100A1D760 /* ContactDetailViewController.swift in Sources */,
 				57DDBE4D2497F2BB007929DF /* ContactTableViewCell.swift in Sources */,
 				890844242497B3B800E2D5F7 /* AppDelegate.swift in Sources */,
 				57DDBE522497F8E3007929DF /* ListViewModel.swift in Sources */,
 				89673BF62497C77B00FD8DD3 /* FileDataService.swift in Sources */,
 				57DDBE4F2497F796007929DF /* ListDataSource.swift in Sources */,
 				89673BEF2497C72F00FD8DD3 /* ParserHelper.swift in Sources */,
+				89FDE6392499148D00A1D760 /* ContactDetailViewModel.swift in Sources */,
 				89FDE6342498F04500A1D760 /* SessionManager.swift in Sources */,
 				89673BF72497C77B00FD8DD3 /* RequestHandler.swift in Sources */,
 				89673BF82497C77B00FD8DD3 /* RequestFactory.swift in Sources */,
