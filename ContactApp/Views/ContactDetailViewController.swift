@@ -10,28 +10,16 @@ import UIKit
 
 class ContactDetailViewController: UIViewController {
 
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var contectLbl: UILabel!
+    @IBOutlet weak var profileImage: UIImageView! // showing profile image
+    @IBOutlet weak var contectLbl: UILabel!    // heighliting and pouplating contect label
     var detailViewModel:ContactDetailViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        self.setUpUi()
+         self.setUpUi()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
+    /// UI setup for showing contect detail
     func setUpUi() {
         guard let cont =  detailViewModel?.contect else {
         return }
@@ -42,7 +30,7 @@ class ContactDetailViewController: UIViewController {
         self.title = cont.first_name
     }
     
-    
+    /// formating and modifying text of contect
     func getTextLabel(contact:Contact) -> NSAttributedString {
            let attributedText = NSMutableAttributedString()
            
