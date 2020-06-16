@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+
+
+struct Contacts:Decodable {
+	let success:Int
+	let msg:String
+	let data:[Contact]?
+}
+
+struct Contact : Decodable {
+    let first_name:String
+    let last_name:String
+    let mobile_number:Int
+    let email_id:String
+    let profile_image:String?
+}
